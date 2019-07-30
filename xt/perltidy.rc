@@ -1,0 +1,23 @@
+# https://metacpan.org/pod/distribution/Perl-Tidy/bin/perltidy
+
+-se     # Errors to STDERR
+-w      # Report warnings as errors
+
+-l=85   # Maximum line length
+-i=4    # Indentation level
+-ci=4   # Continuation Indentation
+
+-vt=0   # Maximum vertical tightness
+-cti=0  # No extra indentation for closing tokens
+-vtc=0  # Close parens on separate line if possible
+
+-pt=1   # Parens tightness
+-bt=1   # Curly brace tightness
+-bbt=0  # Curly brace with code tightness
+-sbt=2  # Square bracket tightness
+
+-nolq   # Don't outdent long quoted strings
+-wbb="% + - * / x != == >= <= =~ < > | & **= += *= &= <<= &&= -= /= |= >>= ||= .= %= ^= x="
+
+-nsfs   # No space before semicolons in for loops
+-hsc    # No hanging side comments

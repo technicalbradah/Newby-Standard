@@ -1,0 +1,21 @@
+[TestingAndDebugging::ProhibitNoStrict]
+allow = refs
+
+[TestingAndDebugging::RequireUseStrict]
+    equivalent_modules = Newby::Standard::Imports Newby::Standard::Moo  Newby::Standard::Moose Moose Moose::Role Moo Moo::Role
+    severity = 5
+
+[TestingAndDebugging::RequireUseWarnings]
+    equivalent_modules = Newby::Standard::Imports Newby::Standard::Moo  Newby::Standard::Moose Moose Moose::Role Moo Moo::Role
+    severity = 5
+
+[Variables::ProhibitUnusedVarsStricter]
+    severity = 5
+
+[Variables::ProhibitUselessInitialization]
+    severity = 5
+
+[Variables::RequireInitializationForLocalVars]
+    severity = 5
+
+[-Subroutines::ProhibitSubroutinePrototypes]
